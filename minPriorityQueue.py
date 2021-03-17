@@ -25,7 +25,7 @@ class MinPriorityQueue:
 		# returns the minimum value, or the root of the heap
 		return self.arr[0]
 	
-	def getList(self)
+	def getList(self):
 		# returns the self.arr list
 		return self.arr
 	
