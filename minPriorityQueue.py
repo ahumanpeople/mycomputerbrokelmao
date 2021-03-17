@@ -66,7 +66,6 @@ class MinPriorityQueue:
 	    self.heapSize += 1
 	    # adds the new key to the heap, removing the None placeholder or elements not in the heap but in the list if needed
 	    if self.arr[0] == None: self.arr[0] = x
-		elif len(self.arr) >= i: self.arr[i - 1] = x
 	    else: self.arr.append(x)
 	    # while i is bigger than (or equal to) 1 and i's parent is bigger than i
 	    while i >= 1 and self.arr[int(math.floor(i/2))] > self.arr[i]:
