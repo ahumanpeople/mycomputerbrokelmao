@@ -8,6 +8,8 @@ Resources:
 
 import minPriorityQueue
 
+""" - - - - - - - - - - - - Exercise 3B - - - - - - - - - - - - """
+
 def extractSetNumMaxVals(self, mpqInstance, k):
 	
 	# makes extraction list from the MPQ list
