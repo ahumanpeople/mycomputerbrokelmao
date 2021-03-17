@@ -10,7 +10,7 @@ import minPriorityQueue
 
 """ - - - - - - - - - - - - Exercise 3B - - - - - - - - - - - - """
 
-def extractSetNumMaxVals(self, mpqInstance, k):
+def extractSetNumMaxVals(mpqInstance, k):
 	
 	# makes extraction list from the MPQ list
 	extract = mpqInstance.getList()
