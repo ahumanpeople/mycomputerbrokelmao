@@ -63,3 +63,16 @@ class MinPriorityQueue:
 		
 			self.arr[i], self.arr[math.floor(i/2)] = self.arr[math.floor(i/2)], self.arr[i]
 			i = math.floor(i/2)
+			
+	def __str__(self):
+		
+		return self.arr
+			
+testQueue = MinPriorityQueue()
+testQueue.insert(6)
+testQueue.insert(7)
+testQueue.insert(12)
+testQueue.insert(10)
+testQueue.insert(17)
+testQueue.insert(15)
+print(testQueue)
