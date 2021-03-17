@@ -58,7 +58,7 @@ class MinPriorityQueue:
 	def insert(self, x):
 	
 		self.heapSize += 1
-		i, self.arr[self.heapSize] = self.heapSize, key
+		i, self.arr[self.heapSize] = self.heapSize, x
 		while i > 1 and self.arr[math.floor(i/2)] > self.arr[i]:
 		
 			self.arr[i], self.arr[math.floor(i/2)] = self.arr[math.floor(i/2)], self.arr[i]
