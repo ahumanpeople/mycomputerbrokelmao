@@ -17,9 +17,9 @@ def extractSetNumMaxVals(mpqInstance, k):
 	# makes insertion list with k spots and a minimum variable
 	insert, minimum = [], None
 	# for every item in the heap
-	for i in range(mpqInstance.getSize()):
+	for i in range(mpqInstance.size()):
 		# if there's still more elements to be added into insert based on the k given
-		if len(insert) > k:
+		if len(insert) < k:
 			# adds the i value from extract into insert
 			insert.append(extract[i])
 		# else, if the insert list just filled up and this is the first value compared instead of added
@@ -42,3 +42,14 @@ def extractSetNumMaxVals(mpqInstance, k):
 				minimum = min(insert)
 	# then return max values derived
 	return insert
+
+testQueue = MinPriorityQueue()
+testQueue.insert(6)
+testQueue.insert(7)
+testQueue.insert(10)
+testQueue.insert(12)
+testQueue.insert(15)
+testQueue.insert(17)
+print(testQueue.getList())
+print(testQueue)
+print(extractSetNumMaxVals(testQueue, 3))
