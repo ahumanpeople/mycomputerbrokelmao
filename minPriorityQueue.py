@@ -26,11 +26,29 @@ class MinPriorityQueue:
 		
 	def getMin(self):
 	
-		pass
+		return self.arr[1]
+	
+	def minHeapify(self, i):
+		
+		l, r = self.arr[2*i], self.arr[(2*i)+1]
+		if l <= self.heapSize:
+			
+			pass
 		
 	def extractMin(self):
 	
-		pass
+		if self.heapSize >= 1:
+			
+			min = self.arr[1]
+			self.arr[1] = self.arr[self.heapSize]
+			self.heapSize -= 1
+			self.minHeapify(1)
+			return min
+		
+		else:
+			
+			print("Queue is empty.")
+			return None
 		
 	def insert(self, x):
 	
