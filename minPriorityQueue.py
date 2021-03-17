@@ -25,6 +25,10 @@ class MinPriorityQueue:
 		# returns the minimum value, or the root of the heap
 		return self.arr[0]
 	
+	def getList(self)
+		# returns the self.arr list
+		return self.arr
+	
 	def minHeapify(self, i):
 		# set l as i's left child, r as i's right child, and smallest as i
 		l, r, smallest = 2*i, (2*i)+1, i
