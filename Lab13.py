@@ -2,7 +2,7 @@
 File: minPriorityQueue.py
 Author: Jose Barrios
 Resources:
-    - https://www.w3schools.com/python/python_reference.asp
+	- https://www.w3schools.com/python/python_reference.asp
 	- https://www.w3schools.com/python/ref_list_index.asp
 """
 
@@ -38,5 +38,5 @@ def extractSetNumMaxVals(self, mpqInstance, k):
 				insert[insert.index(minimum)] = extract[i]
 				# and find the new minimum
 				minimum = min(insert)
-		# then return max values derived
-		return insert
+	# then return max values derived
+	return insert
