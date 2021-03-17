@@ -64,7 +64,7 @@ class MinPriorityQueue:
 	    if self.arr[0] == None: self.arr[0] = x
 		elif len(self.arr) >= i: self.arr[i - 1] = x
 	    else: self.arr.append(x)
-	    # while i is bigger (or equal to) 1 and i's parent is bigger than i
+	    # while i is bigger than (or equal to) 1 and i's parent is bigger than i
 	    while i >= 1 and self.arr[int(math.floor(i/2))] > self.arr[i]:
 	        # swap i and its parent's positions, and then make i equal its parent
 	        self.arr[i], self.arr[int(math.floor(i/2))] = self.arr[int(math.floor(i/2))], self.arr[i]
