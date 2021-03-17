@@ -30,10 +30,10 @@ class MinPriorityQueue:
 	
 	def minHeapify(self, i):
 		
-		l, r, smallest = self.arr[2*i], self.arr[(2*i)+1], i
+		l, r, smallest = 2*i, (2*i)+1, i
 		
-		if l <= self.heapSize and A[2*i] < A[i]: smallest = l
-		elif r <= self.heapSize and A[(2*i)+1] < A[i]: smallest = r
+		if l <= self.heapSize and A[l] < A[i]: smallest = l
+		elif r <= self.heapSize and A[r] < A[i]: smallest = r
 			
 		if smallest != i:
 			
@@ -44,11 +44,11 @@ class MinPriorityQueue:
 	
 		if self.heapSize >= 1:
 			
-			min = self.arr[1]
+			minimum = self.arr[1]
 			self.arr[1] = self.arr[self.heapSize]
 			self.heapSize -= 1
 			self.minHeapify(1)
-			return min
+			return minimum
 		
 		else:
 			
