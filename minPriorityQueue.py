@@ -37,12 +37,10 @@ class MinPriorityQueue:
 		self.heapSize += 1
 		self.arr[self.heapSize] = int(sys.maxsize)
 		i = self.heapSize
-		if x > A[i]:
-		
-			print("Given key is larger than current key, try again.")
+		if x <= A[i]:
 			
-		A[i] = key
-		while i > 1 and A[math.floor(i/2)] > A[i]:
+			A[i] = key
+			while i > 1 and A[math.floor(i/2)] > A[i]:
 		
-			A[i], A[math.floor(i/2)] = A[math.floor(i/2)], A[i]
-			i = math.floor(i/2)
+				A[i], A[math.floor(i/2)] = A[math.floor(i/2)], A[i]
+				i = math.floor(i/2)
